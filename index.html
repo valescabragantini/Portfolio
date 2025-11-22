@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<!--Mudar aqui-->
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap é uma biblioteca que torna nosso site responsivo, trabalhando com classes p/dar design no html, diminuindo a dependência do css-->
+    <!--Site Bootstrap docs download CDN via jsDelivr link script-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!--Site Bootstrap icons CDN link (parte inferior da página)-->
+    <!--Esta é a instalação da biblioteca de ícones-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!--Adicionar aqui-->
+    <link rel="stylesheet" href="style.css">
+    <!--Mudar aqui-->
+    <title>Meu portfólio</title>
+</head>
+
+<!--Criar o body-->
+
+<body>
+    <!--Site Bootstrap docs layout containers-->
+    <!--.container é uma classe-->
+    <!--Este container vai criar uma borda na página -->
+    <!--Site Bootstrap docs utilities text-->
+    <!--Este text-center centralizará o texto-->
+    <header class="container text-center">
+        <!--Site Bootstrap docs utilities borders-->
+        <!--Este rounded-circle arredondará a imagem-->
+        <!--Acrescentar width e height-->
+        <img src="img/avatarPerfil.png" alt="Avatar da Valesca" class="rounded-circle" width="150" height="200"
+            srcset="">
+        <!--Site Bootstrap docs content typography-->
+        <!--Este lead deixará o parágrafo diferente-->
+        <p class="lead">Meu nome é Valesca Bragantini</p>
+        <h1 class="mt-4">Eu ensino Filosofia e Tecnologia</h1>
+        <p>Formei-me em Filosofia, Tecnologia em Análise e Desenvolvimento de Sistemas, Pedagogia e História. Sou
+            professora concursada pelo Estado de São Paulo e leciono para a Educação Básica desde 2010.</p>
+        <p>Concretizei especializações em Teologia/Ciências da Religião e Educação. Elaborei meu TCC com base na crítica
+            de Nietzsche ao cristianismo. Publiquei um artigo sobre a utilização de animais na escola para o
+            desenvolvimento de habilidades socioemocionais e cognitivas nos estudantes.</p>
+        <p>Fiz variados cursos em tecnologia e computação e em outras áreas do conhecimento. E participei de muitos
+            eventos, acadêmicos e artísticos, como organizadora, convidada ou ouvinte.</p>
+        <!--Site Bootstrap docs content typography-->
+        <!--Este lead deixará o parágrafo diferente-->
+        <p class="lead mt-4">Minhas habilidades:</p>
+        <div>
+            <!--Site Bootstrap docs components badge-->
+            <!--Este badge destacará os parágrafos-->
+            <p class="badge text-bg-secondary">Algoritmo/Lógica de Programação</p>
+            <p class="badge text-bg-secondary">Linguagem C/Pseudolinguagem</p>
+            <p class="badge text-bg-secondary">Projetos</p>
+            <p class="badge text-bg-secondary">Programação em blocos</p>
+            <p class="badge text-bg-secondary">Arduino/IoT (Internet of Things)</p>
+        </div>
+    </header>
+    <!--Site Bootstrap docs layout containers-->
+    <!--Este container vai criar uma borda na página -->
+    <!--Site Bootstrap docs utilities text-->
+    <!--Este text-center centralizará o texto-->
+    <!--Site Bootstrap docs utilities spacing-->
+    <!--Este mt-3 colocará uma margem de tamanho 3 no topo do main-->
+    <main class="container text-center mt-3">
+        <h2>Meus projetos</h2>
+        <!--Site Bootstrap docs layout columns-->
+        <!--Este row vai criar 1 linha com certo número de colunas-->
+        <!--Este justify-content-center centralizará a coluna sem necessidade de alinhamento com as outras colunas-->
+        <div class="row justify-content-center">
+            <!--Site Bootstrap docs layout columns-->
+            <!--Este col-md-4 vai dividir o grid padrão do bootstrap (tamanho 12) por 4 = 3 colunas-->
+
+            <!-- PROJETO 1 -->
+            <div class="col-md-4">
+                <!--Site Bootstrap docs components card-->
+                <!--Este card (copiar código todo do 1º card) vai criar um cartão do projeto com suas informações-->
+                <!--Remover style="width: 18rem;-->
+                <div class="card">
+                    <img src="img/projeto1.png" class="card-img-top"
+                        alt="Imagem do projeto do Scratch sobre o Gerenciador de Campainha Ultrassônica Inteligente">
+                    <div class="card-body">
+                        <h5 class="card-title">Scratch: Campainha dos Cães</h5>
+                        <p class="card-text">Projeto de animação, programado na plataforma Scratch, sobre o
+                            funcionamento do aplicativo Gerenciador de Campainha Ultrassônica Inteligente, destinado à
+                            convivência entre um tutor e seus cães.</p>
+                        <!--Retirar <a href="#" class="btn btn-primary">Go somewhere</a> e colar o button de link-->
+                        <!--Site Bootstrap docs components buttons-->
+                        <!--Site Bootstrap docs components modal (funcionalidade javascript p/adicionar janela de diálogo sem sair da página)-->
+                        <!--Retirar #exampleModal e colocar #modal1 (id-identificador)-->
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal1">Veja
+                            o projeto</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--Site Bootstrap docs layout columns-->
+        <!--Este row vai criar 1 linha com certo número de colunas-->
+        <div class="row mt-3">
+            <!--Site Bootstrap docs layout columns-->
+            <!--Este col-md-4 vai dividir o grid padrão do bootstrap (tamanho 12) por 4 = 3 colunas-->
+
+            <!-- PROJETO 2 -->
+            <div class="col-md-4">
+                <!--Site Bootstrap docs components card-->
+                <!--Este card (copiar código todo do 1º card) vai criar um cartão do projeto com suas informações-->
+                <!--Remover style="width: 18rem;-->
+                <div class="card">
+                    <img src="img/projeto2a.jpg" class="card-img-top"
+                        alt="Imagem do rascunho das peças para a montagem do projeto da Campainha Inteligente">
+                    <div class="card-body">
+                        <h5 class="card-title">Rascunho: Campainha Inteligente</h5>
+                        <p class="card-text">Rascunho do projeto da Campainha Inteligente, com os devidos ligamentos
+                            entre as peças necessárias para a sua montagem: placa Node MCU, sensor PIR e buzzer.</p>
+                        <!--Retirar <a href="#" class="btn btn-primary">Go somewhere</a> e colar o button de link-->
+                        <!--Site Bootstrap docs components buttons-->
+                        <!--Site Bootstrap docs components modal (funcionalidade javascript p/adicionar janela de diálogo sem sair da página)-->
+                        <!--Retirar #exampleModal e colocar #modal2 (id-identificador)-->
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal2">Veja
+                            o projeto</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJETO 3 -->
+            <div class="col-md-4">
+                <!--Site Bootstrap docs components card-->
+                <!--Este card (copiar código todo do 1º card) vai criar um cartão do projeto com suas informações-->
+                <!--Remover style="width: 18rem;-->
+                <div class="card">
+                    <img src="img/projeto2b.jpg" class="card-img-top"
+                        alt="Imagem do código e da execução do projeto da Campainha Inteligente no Arduino">
+                    <div class="card-body">
+                        <h5 class="card-title">Arduino: Campainha Inteligente</h5>
+                        <p class="card-text">Código e execução do projeto da Campainha Inteligente, com programação
+                            feita na interface de desenvolvimento do Arduino.</p>
+                        <!--Retirar <a href="#" class="btn btn-primary">Go somewhere</a> e colar o button de link-->
+                        <!--Site Bootstrap docs components buttons-->
+                        <!--Site Bootstrap docs components modal (funcionalidade javascript p/adicionar janela de diálogo sem sair da página)-->
+                        <!--Retirar #exampleModal e colocar #modal3 (id-identificador)-->
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal3">Veja
+                            o projeto</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJETO 4 -->
+            <div class="col-md-4">
+                <!--Site Bootstrap docs components card-->
+                <!--Este card (copiar código todo do 1º card) vai criar um cartão do projeto com suas informações-->
+                <!--Remover style="width: 18rem;-->
+                <div class="card">
+                    <img src="img/projeto2c.jpg" class="card-img-top"
+                        alt="Imagem do circuito montado do projeto da Campainha Inteligente">
+                    <div class="card-body">
+                        <h5 class="card-title">Circuito: Campainha Inteligente</h5>
+                        <p class="card-text">Circuito do projeto da Campainha Inteligente, montado com os itens
+                            rascunhados e demais recursos de robótica, em operação junto à IDE do Arduino.</p>
+                        <!--Retirar <a href="#" class="btn btn-primary">Go somewhere</a> e colar o button de link-->
+                        <!--Site Bootstrap docs components buttons-->
+                        <!--Site Bootstrap docs components modal (funcionalidade javascript p/adicionar janela de diálogo sem sair da página)-->
+                        <!--Retirar #exampleModal e colocar #modal4 (id-identificador)-->
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal4">Veja
+                            o projeto</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--Site Bootstrap docs layout columns-->
+        <!--Este row vai criar 1 linha com certo número de colunas-->
+        <div class="row mt-3">
+            <!--Site Bootstrap docs layout columns-->
+            <!--Este col-md-4 vai dividir o grid padrão do bootstrap (tamanho 12) por 4 = 3 colunas-->
+
+            <!-- PROJETO 5 -->
+            <div class="col-md-4">
+                <!--Site Bootstrap docs components card-->
+                <!--Este card (copiar código todo do 1º card) vai criar um cartão do projeto com suas informações-->
+                <!--Remover style="width: 18rem;-->
+                <div class="card">
+                    <img src="img/projeto3a.jpg" class="card-img-top"
+                        alt="Imagem do design, no App Inventor, do projeto da Campainha Inteligente">
+                    <div class="card-body">
+                        <h5 class="card-title">App Inventor: design da Campainha Inteligente</h5>
+                        <p class="card-text">Design do projeto da Campainha Inteligente para dispositivos móveis,
+                            modelado na plataforma do App Inventor.</p>
+                        <!--Retirar <a href="#" class="btn btn-primary">Go somewhere</a> e colar o button de link-->
+                        <!--Site Bootstrap docs components buttons-->
+                        <!--Site Bootstrap docs components modal (funcionalidade javascript p/adicionar janela de diálogo sem sair da página)-->
+                        <!--Retirar #exampleModal e colocar #modal5 (id-identificador)-->
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal5">Veja
+                            o projeto</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJETO 6 -->
+            <div class="col-md-4">
+                <!--Site Bootstrap docs components card-->
+                <!--Este card (copiar código todo do 1º card) vai criar um cartão do projeto com suas informações-->
+                <!--Remover style="width: 18rem;-->
+                <div class="card">
+                    <img src="img/projeto3b.jpg" class="card-img-top"
+                        alt="Imagem da programação em blocos, no App Inventor, do projeto da Campainha Inteligente">
+                    <div class="card-body">
+                        <h5 class="card-title">App Inventor: Programação da Campainha Inteligente</h5>
+                        <p class="card-text">Programação em blocos do projeto da Campainha Inteligente, possibilitada
+                            pela plataforma do App Inventor.</p>
+                        <!--Retirar <a href="#" class="btn btn-primary">Go somewhere</a> e colar o button de link-->
+                        <!--Site Bootstrap docs components buttons-->
+                        <!--Site Bootstrap docs components modal (funcionalidade javascript p/adicionar janela de diálogo sem sair da página)-->
+                        <!--Retirar #exampleModal e colocar #modal6 (id-identificador)-->
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal6">Veja
+                            o
+                            projeto</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJETO 7 -->
+            <div class="col-md-4">
+                <!--Site Bootstrap docs components card-->
+                <!--Este card (copiar código todo do 1º card) vai criar um cartão do projeto com suas informações-->
+                <!--Remover style="width: 18rem;-->
+                <div class="card">
+                    <img src="img/projeto4.jpg" class="card-img-top"
+                        alt="Imagem dos sinais do sensor coletados pelo ThingSpeak para o projeto da Campainha Inteligente">
+                    <div class="card-body">
+                        <h5 class="card-title">ThingSpeak: Campainha Inteligente</h5>
+                        <p class="card-text">Sinais do sensor do projeto da Campainha Inteligente coletados pela
+                            plataforma ThingSpeak.</p>
+                        <!--Retirar <a href="#" class="btn btn-primary">Go somewhere</a> e colar o button de link-->
+                        <!--Site Bootstrap docs components buttons-->
+                        <!--Site Bootstrap docs components modal (funcionalidade javascript p/adicionar janela de diálogo sem sair da página)-->
+                        <!--Retirar #exampleModal e colocar #modal7 (id-identificador)-->
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal7">Veja
+                            o
+                            projeto</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!--modal1-->
+    <!--Site Bootstrap docs components modal (funcionalidade javascript p/adicionar janela de diálogo sem sair da página)-->
+    <!--Adicionar id="modal1" sem # na div abaixo-->
+    <div class="modal" id="modal1" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Scratch: Campainha dos Cães</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Projeto de animação, programado na plataforma Scratch, sobre o funcionamento do aplicativo
+                        Gerenciador de Campainha Ultrassônica Inteligente, destinado à convivência entre um tutor e seus
+                        cães.</p>
+                    <!--Adicionar <img src="" alt="">-->
+                    <!--Site Bootstrap docs content images-->
+                    <!--Este img-fluid tornará a imagem responsiva-->
+                    <!--Este w-100 evitará espaçamentos nas laterais-->
+                    <img src="img/projeto1.png" class="img-fluid w-100"
+                        alt="Imagem do projeto do Scratch sobre o Gerenciador de Campainha Ultrassônica Inteligente">
+                </div>
+                <div class="modal-footer">
+                    <!--Retirar <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>-->
+                    <!--Retirar <button type="button" class="btn btn-primary">Save changes</button>-->
+                    <!--Colocar no lugar 2 <a href=""></a>-->
+                    <a href="https://scratch.mit.edu/projects/325822829">Ver o projeto ao vivo</a>
+                    <a href="https://scratch.mit.edu/projects/325822829/editor/">Ver o código do projeto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--modal2-->
+    <!--Site Bootstrap docs components modal (funcionalidade javascript p/adicionar janela de diálogo sem sair da página)-->
+    <!--Adicionar id="modal2" sem # na div abaixo-->
+    <div class="modal" id="modal2" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Rascunho: Campainha Inteligente</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Rascunho do projeto da Campainha Inteligente, com os devidos ligamentos
+                        entre as peças necessárias para a sua montagem: placa Node MCU, sensor PIR e buzzer.</p>
+                    <!--Adicionar <img src="" alt="">-->
+                    <!--Site Bootstrap docs content images-->
+                    <!--Este img-fluid tornará a imagem responsiva-->
+                    <!--Este w-100 evitará espaçamentos nas laterais-->
+                    <img src="img/projeto2a.jpg" class="img-fluid w-100"
+                        alt="Imagem do rascunho das peças para a montagem do projeto da Campainha Inteligente">
+                </div>
+                <div class="modal-footer">
+                    <!--Retirar <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>-->
+                    <!--Retirar <button type="button" class="btn btn-primary">Save changes</button>-->
+                    <!--Colocar no lugar 2 <a href=""></a>-->
+                    <!--<a href="">Ver o projeto ao vivo</a>-->
+                    <!--<a href="">Ver o código do projeto</a>-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--modal3-->
+    <!--Site Bootstrap docs components modal (funcionalidade javascript p/adicionar janela de diálogo sem sair da página)-->
+    <!--Adicionar id="modal3" sem # na div abaixo-->
+    <div class="modal" id="modal3" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Arduino: Campainha Inteligente</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Código e execução do projeto da Campainha Inteligente, com programação
+                        feita na interface de desenvolvimento do Arduino.</p>
+                    <!--Adicionar <img src="" alt="">-->
+                    <!--Site Bootstrap docs content images-->
+                    <!--Este img-fluid tornará a imagem responsiva-->
+                    <!--Este w-100 evitará espaçamentos nas laterais-->
+                    <img src="img/projeto2b.jpg" class="img-fluid w-100"
+                        alt="Imagem do código e da execução do projeto da Campainha Inteligente no Arduino">
+                </div>
+                <div class="modal-footer">
+                    <!--Retirar <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>-->
+                    <!--Retirar <button type="button" class="btn btn-primary">Save changes</button>-->
+                    <!--Colocar no lugar 2 <a href=""></a>-->
+                    <!--<a href="">Ver o projeto ao vivo</a>-->
+                    <a href="">Ver o código do projeto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--modal4-->
+    <!--Site Bootstrap docs components modal (funcionalidade javascript p/adicionar janela de diálogo sem sair da página)-->
+    <!--Adicionar id="modal4" sem # na div abaixo-->
+    <div class="modal" id="modal4" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Circuito: Campainha Inteligente</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Circuito do projeto da Campainha Inteligente, montado com os itens
+                        rascunhados e demais recursos de robótica, em operação junto à IDE do Arduino.</p>
+                    <!--Adicionar <img src="" alt="">-->
+                    <!--Site Bootstrap docs content images-->
+                    <!--Este img-fluid tornará a imagem responsiva-->
+                    <!--Este w-100 evitará espaçamentos nas laterais-->
+                    <img src="img/projeto2c.jpg" class="img-fluid w-100"
+                        alt="Imagem do circuito montado do projeto da Campainha Inteligente">
+                </div>
+                <div class="modal-footer">
+                    <!--Retirar <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>-->
+                    <!--Retirar <button type="button" class="btn btn-primary">Save changes</button>-->
+                    <!--Colocar no lugar 2 <a href=""></a>-->
+                    <!--<a href="">Ver o projeto ao vivo</a>-->
+                    <!--<a href="">Ver o código do projeto</a>-->
+                    <p>Veja o vídeo do projeto:</p>
+                    <video src="..." class="object-fit-contain" autoplay></video>
+                    <video src="..." class="object-fit-cover" autoplay></video>
+                    <video src="..." class="object-fit-fill" autoplay></video>
+                    <video src="..." class="object-fit-scale" autoplay></video>
+                    <video src="..." class="object-fit-none" autoplay></video>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--modal5-->
+    <!--Site Bootstrap docs components modal (funcionalidade javascript p/adicionar janela de diálogo sem sair da página)-->
+    <!--Adicionar id="modal5" sem # na div abaixo-->
+    <div class="modal" id="modal5" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">App Inventor: design da Campainha Inteligente</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Design do projeto da Campainha Inteligente para dispositivos móveis,
+                        modelado na plataforma do App Inventor.</p>
+                    <!--Adicionar <img src="" alt="">-->
+                    <!--Site Bootstrap docs content images-->
+                    <!--Este img-fluid tornará a imagem responsiva-->
+                    <!--Este w-100 evitará espaçamentos nas laterais-->
+                    <img src="img/projeto3a.jpg" class="img-fluid w-100"
+                        alt="Imagem do design, no App Inventor, do projeto da Campainha Inteligente">
+                </div>
+                <div class="modal-footer">
+                    <!--Retirar <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>-->
+                    <!--Retirar <button type="button" class="btn btn-primary">Save changes</button>-->
+                    <!--Colocar no lugar 2 <a href=""></a>-->
+                    <!--<a href="">Ver o projeto ao vivo</a>-->
+                    <!--<a href="">Ver o código do projeto</a>-->
+                    <p>Veja o vídeo do projeto:</p>
+                    <video src="..." class="object-fit-contain" autoplay></video>
+                    <video src="..." class="object-fit-cover" autoplay></video>
+                    <video src="..." class="object-fit-fill" autoplay></video>
+                    <video src="..." class="object-fit-scale" autoplay></video>
+                    <video src="..." class="object-fit-none" autoplay></video>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--modal6-->
+    <!--Site Bootstrap docs components modal (funcionalidade javascript p/adicionar janela de diálogo sem sair da página)-->
+    <!--Adicionar id="modal6" sem # na div abaixo-->
+    <div class="modal" id="modal6" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">App Inventor: Programação da Campainha Inteligente</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Programação em blocos do projeto da Campainha Inteligente, possibilitada
+                        pela plataforma do App Inventor.</p>
+                    <!--Adicionar <img src="" alt="">-->
+                    <!--Site Bootstrap docs content images-->
+                    <!--Este img-fluid tornará a imagem responsiva-->
+                    <!--Este w-100 evitará espaçamentos nas laterais-->
+                    <img src="img/projeto3b.jpg" class="img-fluid w-100"
+                        alt="Imagem da programação em blocos, no App Inventor, do projeto da Campainha Inteligente">
+                </div>
+                <div class="modal-footer">
+                    <!--Retirar <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>-->
+                    <!--Retirar <button type="button" class="btn btn-primary">Save changes</button>-->
+                    <!--Colocar no lugar 2 <a href=""></a>-->
+                    <!--<a href="">Ver o projeto ao vivo</a>-->
+                    <a href="https://gallery.appinventor.mit.edu/?galleryid=4540393399648256">Ver publicação do projeto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--modal7-->
+    <!--Site Bootstrap docs components modal (funcionalidade javascript p/adicionar janela de diálogo sem sair da página)-->
+    <!--Adicionar id="modal7" sem # na div abaixo-->
+    <div class="modal" id="modal7" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">ThingSpeak: Campainha Inteligente</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Sinais do sensor do projeto da Campainha Inteligente coletados pela
+                        plataforma ThingSpeak, em ligação com as codificações dos Arduino e App Inventor.</p>
+                    <!--Adicionar <img src="" alt="">-->
+                    <!--Site Bootstrap docs content images-->
+                    <!--Este img-fluid tornará a imagem responsiva-->
+                    <!--Este w-100 evitará espaçamentos nas laterais-->
+                    <img src="img/projeto4.jpg" class="img-fluid w-100"
+                        alt="Imagem dos sinais do sensor coletados pelo ThingSpeak para o projeto da Campainha Inteligente">
+                </div>
+                <div class="modal-footer">
+                    <!--Retirar <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>-->
+                    <!--Retirar <button type="button" class="btn btn-primary">Save changes</button>-->
+                    <!--Colocar no lugar 2 <a href=""></a>-->
+                    <!--<a href="">Ver o projeto ao vivo</a>-->
+                    <!--<a href="">Ver o código do projeto</a>-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Site Bootstrap docs layout containers-->
+    <!--Este container vai criar uma borda na página -->
+    <!--Site Bootstrap docs utilities spacing-->
+    <!--Este py-2 colocará uma margem/preenchimento de tamanho  no topo do footer-->
+    <footer class="container text-center py-5">
+        <h2>Entre em contato</h2>
+        <div>
+            <p>bragantini@prof.educacao.sp.gov.br</p>
+            <!--Site Bootstrap icons (pesquisar GitHub)-->
+            <!--Clicar no ícone do GitHub e em Icon font (copiar) e colar aqui-->
+            <i class="bi bi-github"></i>
+            <a href="https://github.com/AcselavVals">github.com/AcselavVals</a>
+        </div>
+        <!--Site Bootstrap docs content typography-->
+        <!--Este lead deixará o parágrafo diferente-->
+        <!--Site Bootstrap docs utilities text-->
+        <!--Este text-center centralizará o texto-->
+        <!--Site Bootstrap docs utilities spacing-->
+        <!--Este my-5 colocará uma margem de tamanho 5 no topo do parágrafo-->
+        <p class=" lead my-5">&#169 2020-2025 Produzido por Valesca Bragantini</p>
+        <p class=" lead my-5">&copy; Copyright 2025. Produzido por Valesca Bragantini.</p>
+        <p class=" lead my-5">(C) 2025 Empresa Fulana. Todos os direitos reservados.</p>
+        <p class=" lead my-5">Copyright 2025 Empresa Sicrana Todos os direitos reservados</p>
+    </footer>
+    <!--Site Bootstrap docs download CDN via jsDelivr link script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

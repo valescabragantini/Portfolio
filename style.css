@@ -1,0 +1,39 @@
+/*Ir em: https://fonts.google.com/ - Pesquisar a fonte Chakra Petch e clicar nela*/
+/*Clicar em Get Font (obter fonte) e em Get Embed Code (obtenha o código de incorporação)*/
+/*Clicar em @import e copiar o @import url até o ;*/
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/*:root é uma pseudo-classe (variável global) para definir propriedades personalizadas*/
+:root {
+    /*Ir em https://www.figma.com/ - Clicar em Recursos e em Cores (parte inferior do site) e copiar as cores (códigos)*/
+    --cor-principal: #84b067;
+    --cor-secundaria: #2e6f40;
+    --cor-destaque: #00FF7F;
+}
+
+/*Características aplicadas a vários elementos como h (weight=espessura/peso), a (so link), a:hover (cursor encostado) do html*/
+body{
+    background-color:darkcyan;
+    font-family: 'Chakra Petch',sans-serif;
+    color: var(--cor-principal);
+    font-weight: 700;
+}
+h1,h2,h5,.card h5{
+    color: var(--cor-secundaria);
+    font-weight: 700;
+}
+.lead{
+    color: var(--cor-destaque);
+    font-weight: 700;
+}
+a,.btn-link,.card p,.modal p{
+    color: var(--cor-principal);
+    font-weight: 700;
+}
+a:hover,.btn-link:hover,footer p:hover{
+    color: var(--cor-destaque);
+    font-weight: 700;
+}
+.card,.modal-body{
+    background-color: rgb(61, 60, 60);
+}
